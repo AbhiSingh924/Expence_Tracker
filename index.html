@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Video Background -->
+  <video autoplay muted loop id="bg-video">
+      <source src="bg_video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+
+  <div class="container">
+      <h2>Expense Tracker</h2>
+
+      <div class="balance">
+          <h3>Balance: $<span id="balance">0.00</span></h3>
+      </div>
+
+      <div class="summary">
+          <div class="income">
+              <h4>Income</h4>
+              <p id="income">$0.00</p>
+          </div>
+          <div class="expense">
+              <h4>Expense</h4>
+              <p id="expense">$0.00</p>
+          </div>
+      </div>
+
+      <h3>Transactions</h3>
+      <ul id="transaction-list"></ul>
+
+      <h3>Add Transaction</h3>
+      <form id="transaction-form">
+          <input type="text" id="description" placeholder="Enter description" required>
+          <input type="number" id="amount" placeholder="Enter amount" required>
+          <select id="type">
+              <option value="income">Income</option>
+              <option value="expense">Expense</option>    
+          </select>
+          <button type="submit">Add Transaction</button>
+      </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
