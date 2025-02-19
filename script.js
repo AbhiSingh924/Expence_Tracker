@@ -25,8 +25,8 @@ function updateSummary() {
     balance = income - expense;
 
     balanceEl.innerText = balance.toFixed(2);
-    incomeEl.innerText = "$" + income.toFixed(2);
-    expenseEl.innerText = "$" + expense.toFixed(2);
+    incomeEl.innerText = "₹" + income.toFixed(2);
+    expenseEl.innerText = "₹" + expense.toFixed(2);
 }
 
 
@@ -35,9 +35,9 @@ function renderTransactions() {
     transactions.forEach((t, index) => {
         const li = document.createElement("li");
         li.innerHTML = `<span style="color: ${t.type === "income" ? "green" : "red"}">
-                            ${t.description}: $${t.amount}
+                            ${t.description}: ₹${t.amount}
                         </span> 
-                        <span onclick="deleteTransaction(${index})" style="cursor:pointer; color:grey;">❌</span>`;
+                        <span onclick="deleteTransaction(₹{index})" style="cursor:pointer; color:grey;">❌</span>`;
         
         transactionList.appendChild(li);
     });

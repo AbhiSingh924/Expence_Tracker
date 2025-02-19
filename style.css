@@ -22,11 +22,9 @@ body {
 
 .container {
     width: 90%;
-    /* background-color: rgba(255, 255, 255, 0.8);  */
-    padding: 20px;
-    margin: 50px auto;
+    padding: 10px;
+    margin: 10px auto;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
 }
 
 /* .container {
@@ -42,14 +40,14 @@ h2 {
     color:rgb(137, 223, 238);
     font-style: italic;
     font-size: 3em;
-    text-decoration: underline black;
+    text-decoration: underline rgb(137, 223, 238);
 }
 
 .balance h3 {
     margin: 0;
-    color:rgb(83, 145, 145);
-    font-size: 2em;
-    
+    color: rgb(137, 223, 238);
+    font-size: 2em;   
+    text-decoration: underline rgb(137, 223, 238);
 }
 
 .summary {
@@ -67,13 +65,16 @@ h2 {
 
 .income {
     color:rgb(0,128,0);
+    text-decoration: underline rgb(0,128,0);    
 }
 
 .expense {
     color:#ae2029;
+    text-decoration: underline #ae2029;
 }
+
 h3 {
-    color:  rgb(160, 160, 241);
+    color: rgb(137, 223, 238);
     font-size: 2em;
 }
 
@@ -112,5 +113,5 @@ button {
 }
 
 button:hover {
-    background:rgb(149, 231, 167);
+    background:rgb(3, 79, 133);
 }
